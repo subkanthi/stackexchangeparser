@@ -17,10 +17,9 @@ def main():
         print(args.file)
         sys.exit(0)
 
-   # if args:
-#        if args.file:
 
     xmlParser = XmlParser(args.file)
-    xmlParser.parseXml()
+    list = xmlParser.parseXml()
+    print(list.count())
 
 main()
