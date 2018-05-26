@@ -15,11 +15,13 @@ class XmlParser:
         self.file = file
 
 
+    # Function to parse XML file based on stackoverflow
+    # Structure
     def parseXml(self):
         xmldoc = xml.dom.minidom.parse(self.file)
-        itemlist = xmldoc.getElementsByTagName('item')
+        itemlist = xmldoc.getElementsByTagName('row')
         print(len(itemlist))
-        print(itemlist[0].attributes['name'].value)
-        for s in itemlist:
-            print(s.attributes['name'].value)
+        # print(itemlist[0].attributes['name'].value)
+        # for s in itemlist:
+        #     print(s.attributes['name'].value)
 
