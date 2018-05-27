@@ -20,6 +20,6 @@ def main():
 
     xmlParser = XmlParser(args.file)
     list = xmlParser.parseXml()
-    print(list.count())
+    #print(list.count())
 
 main()
