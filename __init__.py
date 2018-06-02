@@ -1,7 +1,7 @@
 import argparse;
 import sys;
 from XmlParser import XmlParser;
-from SparkConnector import  SparkConnector;
+from connector.SparkConnector import  SparkConnector;
 
 
 
