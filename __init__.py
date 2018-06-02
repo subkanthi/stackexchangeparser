@@ -1,6 +1,7 @@
 import argparse;
 import sys;
 from XmlParser import XmlParser;
+from SparkConnector import  SparkConnector;
 
 
 
@@ -21,5 +22,7 @@ def main():
     xmlParser = XmlParser(args.file)
     list = xmlParser.parseXml()
     #print(list.count())
+
+    SparkConnector('s3n://sparkapache/Posts.xml')
 
 main()
