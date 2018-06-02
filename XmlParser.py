@@ -1,7 +1,7 @@
 import xml.dom.minidom;
 from typing import List
 
-from StackExchangeComment import StackExchangeComment;
+from models.StackExchangeComment import StackExchangeComment;
 
 class XmlParser:
 
