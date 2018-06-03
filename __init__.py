@@ -32,6 +32,9 @@ def main():
     if cassandraIP is not None and cassandraKeyspace is not None:
         connector = CassandraConnector(cassandraIP, cassandraKeyspace)
         connector.connect()
+        connector.writeData()
+        connector._ip
+
     else:
         print(args.file)
         sys.exit(0)
