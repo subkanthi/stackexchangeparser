@@ -34,7 +34,7 @@ def main():
     else:
         print(args.file)
         sys.exit(0)
-        
+
     SparkConnector('s3n://sparkapache/Posts.xml')
 
 main()
