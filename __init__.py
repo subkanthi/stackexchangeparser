@@ -31,10 +31,11 @@ def main():
 
     if cassandraIP is not None and cassandraKeyspace is not None:
         connector = CassandraConnector(cassandraIP, cassandraKeyspace)
+        connector.connect()
     else:
         print(args.file)
         sys.exit(0)
 
-    SparkConnector('s3n://sparkapache/Posts.xml')
+    #SparkConnector('s3n://sparkapache/Posts.xml')
 
 main()

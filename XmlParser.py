@@ -5,8 +5,6 @@ from models.StackExchangeComment import StackExchangeComment;
 
 class XmlParser:
 
-
-
     def __init__(self, file):
         self.file = file
 
